@@ -1,0 +1,40 @@
+align=left
+separator=true
+separator_block_width=15
+color=#FFFFFF
+
+[window]
+markup=pango
+command=echo "<span background='#151515'>   $(/home/christian/scripts/xfcetweaks/windowtitle) </span>"
+interval=1
+color=#FFFFFF
+
+[kernel]
+markup=pango
+command= uname -r
+interval=4
+color=#37E6E0
+
+[cpu]
+markup=pango
+command=echo "<span background='#151515'>  CPU  $(/home/christian/scripts/cpucheck) </span>"
+interval=4
+color=#FFFFFF
+
+[swap]
+markup=pango
+command=echo "<span background='#151515'>  SWAP  $(/home/christian/scripts/swapcheck) </span>"
+interval=4
+color=#37E6E0
+
+[ram]
+markup=pango
+command=echo "<span background='#151515'>  RAM  $(/home/christian/scripts/ramcheck) </span>"
+interval=4
+color=#FFFFFF
+
+[time]
+markup=pango
+command=echo "<span background='#151515'>   $(date '+%a %e.%b <b>%R</b>') </span>"
+interval=1
+color=#37E6E0
